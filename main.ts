@@ -10,4 +10,19 @@
 // music.power_down.play_until_done()
 // else:
 // music.stop_all_sounds()
-music.playMelody("E D C D E E E D D D E G G E D C D E E E E D E D C ", 120)
+// while True:
+// print("light level:") + str(input.light_level())
+// if input.light_level() > 11 :
+// music.play_melody("E D C D E E E D D D E G G E D C D E E E E D E D C ", 120)
+// music.set_volume(1000)
+// else :
+// music.stop_all_sounds()
+while (true) {
+    console.log("sound level :" + input.soundLevel())
+    if (input.soundLevel() > 33) {
+        music.playMelody("E D C D E E E D D D E G G E D C D E E E E D E D C ", 120)
+    } else {
+        music.stopAllSounds()
+    }
+    
+}
